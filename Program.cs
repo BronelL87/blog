@@ -47,8 +47,8 @@ builder.Services.AddAuthentication(options => {
         ValidateLifetime = true, //Ensures that our Token has not expired
         ValidateIssuerSigningKey = true, //Checking if the Token's signature is Valid
         
-        ValidIssuer = "http://localhost:5000",
-        ValidAudience = "http://localhost:5000",
+        ValidIssuer = "https://lazarblog-fhbpgqe3fna4g0db.westus-01.azurewebsites.net/",
+        ValidAudience = "https://lazarblog-fhbpgqe3fna4g0db.westus-01.azurewebsites.net/",
         IssuerSigningKey = signingCredentials
     };
 
